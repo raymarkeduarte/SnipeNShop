@@ -1,0 +1,220 @@
+*{
+    padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+    background: rgb(202, 201, 201);
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+#category{
+    display:none;
+}
+/*Header*/
+.main-header{
+    height: 200px;
+    width: 100%;
+    background-image: url("../images/BG.jpg");
+    background-size: contain;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 5px 0;
+    width: 100%;
+}
+.nav-left,
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-left ul{
+    display: flex;
+    padding: 5px;
+}
+.nav-left ul li{
+    list-style: none;
+    padding: 5px;
+}
+#LogOut a label, #showLogIn, #showRegister{
+    cursor: pointer;
+}
+.nav-left a{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(255, 255, 255, .6);
+}
+a:hover{
+    color: #fff;
+}
+.nav-left li:hover{
+    background: rgba(0, 0, 0, .3);
+}
+.nav-right input{
+    width: 200px;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.nav-right button{
+    display: flex;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.nav-right label{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.nav-right label img{
+    width: 35px;
+    border-radius: 50%;
+}
+.nav-right button img{
+    margin-top:10px;
+    height: 35px;
+    width: 25px;
+    cursor: pointer;
+}
+.categories-container{
+    background: white;
+    border-radius: 10px;
+    margin: 15px 70px;
+    padding: 20px;
+}
+.categories{
+    display: flex;
+    overflow: auto;
+}
+.categories .category img{
+    height: 100px;
+    cursor: pointer;
+}
+.categories .category{
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 5px;
+}
+/* CATEGORY BUTTON BAGUHIN MO NA LANG */
+.modify{
+    display: none;
+}
+.modifyButtons button{
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s; 
+    padding:5px;    
+    display: inline;
+}
+.modifyButtons button:hover{
+    background: #0055A9;
+    color: white;
+}
+/*list*/
+.product-list-container{
+    background: white;
+    border-radius: 10px;
+    margin: 15px 70px;
+    padding: 20px;
+}
+.product-list img{
+    width: 100px;
+}
+.product-list table{
+    margin-top:10px;
+    border-collapse: collapse;
+    width: 100%;
+}
+.product-list th{
+    width: 100px;
+}
+.product-list th:nth-child(2){
+    width: 40px;
+}
+.product-list th:last-child{
+    width: 200px;
+}
+.product-list tr, td, th{
+    text-align: left;
+    padding: 8px;
+    border: 1px solid lightgray;
+}
+/* MODAL START*/
+.modal-container{
+    color:white;
+    -webkit-text-stroke: .1px black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position:fixed;
+    background-color: rgba(108, 122, 137, .9);
+    top: 0;
+}
+.modal{
+    letter-spacing: 2px;
+    margin:auto;
+}
+.modal form{
+    text-align: center;
+    display: block;
+}
+.modal form h2{
+    margin-bottom: 20px;
+}
+.modal form label{
+    margin:auto;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.modal form input, .modal form select{
+    text-align:center;
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.modal form input[type='submit'], .modal form input[type='button']{
+    height: auto;
+    width: auto;
+    margin:auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s; 
+    display: inline;
+    padding:5px;    
+}
+.modal form input[type='file']{
+    background:white;
+    color:black;
+    cursor: pointer;
+    padding:5px;
+}
+.modal form input[type='submit']:hover{
+    background: #0055A9;
+    color: white;
+}
+.modal form input[type='button']:hover{
+    background: maroon;
+    color: white;
+}
+/* MODAL END */
